@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/HW13/style.css">
+    <title>HW13</title>
+</head>
+
+<body>
+
+    <header>
+
+        <dev class="logo">
+            <p>SEO</p>
+            <img src="/HW13/search.png" class="search">
+        </dev>
+
+        <dev class="list">
+            <h2>Home</h2>
+            <h2>Services</h2>
+            <h2>About</h2>
+            <button class="button-demo">Free SEO Analyze</button>
+        </dev>
+
+    </header>
+
+    <div class="up-container">
+        <img src="/HW13/hero-img.png" class="img">
+        <div class="wrapper">
+            <div class="static-txt">We Are</div>
+            <ul class="dynamic-txts">
+              <li><span>Always At Your Service</span></li>
+              <li><span>Always Trying To Improve Our Skills </span></li>
+              <li><span>A Creative Group Of Developers</span></li>
+              <li><span>Happy To Serve You</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="mid-head">Services We Provide</p>
+
+    <hr class="hr1">
+
+    <div class="mid-container">
+        <div class="box1">
+            <img src="/HW13/service-icon-1.png" class="double">
+            <a class="head1">Design</a><br><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis repellat nemo rem, voluptate necessitatibus dolore omnis repudiandae atque.
+        </div>
+        <div class="box2">
+            <img src="/HW13/service-icon-2.png" class="double">
+            <a class="head1">Development</a><br><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis repellat nemo rem, voluptate necessitatibus dolore omnis repudiandae atque.
+        </div>
+        <div class="box3">
+            <img src="/HW13/service-icon-3.png" class="double">
+            <a class="head1">Online Marketing</a><br><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis repellat nemo rem, voluptate necessitatibus dolore omnis repudiandae atque.
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <img src="/HW13/object1.png" class="img1">
+        <div class="bottom">
+            <a class="head2">How Well Do You Know Search Engine Watch?</a><br>
+            <hr class="hr2">
+            <p class="dodo">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore enim facilis consectetur, praesentium eos,
+            deserunt in provident ad quis magni, quaerat dolor fugit ipsam tempora veniam.
+            Provident qui quod eligendi quam iure. Voluptate harum iure itaque,
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore enim facilis consectetur, praesentium eos,
+            deserunt in provident ad quis magni, quaerat dolor fugit ipsam tempora veniam.
+            Provident qui quod eligendi quam iure. Voluptate harum iure itaque?</p>
+            <button type="button" name="LoadButton" class="load-btn">Load More</button>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/HW13/up-img.png" class="up-btn"></button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+</body>
+
+</html>
