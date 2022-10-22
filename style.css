@@ -36,6 +36,7 @@ header {
 .button-demo:hover {
     color: #2d63c8;
     background-color: #fff;
+    transition: 200ms;
 }
 
 .logo {
