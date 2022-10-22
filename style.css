@@ -72,7 +72,7 @@ header {
 }
 
 .list #list-btn:hover {
-    font-size: 26px;
+    opacity: 0.8;
 }
 
 .up-container {
@@ -113,7 +113,7 @@ header {
 }
 
 .mid-head {
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     justify-content: center;
     font-size: 44px;
@@ -123,10 +123,11 @@ header {
 }
 
 .hr1 {
-    width: 15%;
+    width: 10%;
     height: 3px;
     margin: 10px auto;
-    background-color: #7180bb;
+    background: rgb(113,128,187);
+    background: linear-gradient(90deg, rgba(113,128,187,1) 81%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 87%, rgba(113,128,187,1) 87%);
 }
 
 .box1,
@@ -149,10 +150,6 @@ header {
     font-size: 38px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.double {
-    margin-bottom: 80px;
 }
 
 .wrapper {
@@ -204,7 +201,7 @@ header {
     width: 100%;
     background: #6284FF;
     border-left: 4px solid #fff;
-    animation: typing 4s steps(10) infinite;
+    animation: typing 4s steps(15) infinite;
 }
 
 @keyframes typing {
@@ -242,14 +239,95 @@ header {
 }
 
 .hr2 {
-    width: 40%;
+    width: 70%;
     height: 3px;
     margin: 10px 0;
-    background-color: #7180bb;
+    background: rgb(113,128,187);
+    background: linear-gradient(90deg, rgba(113,128,187,1) 81%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 87%, rgba(113,128,187,1) 87%);
 }
 
 .dodo {
     font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Box {
+    height: 288px;
+    position: relative;
+}
+
+.hover-box {
+    background-color: #2a2a2a;
+    height: 288px;
+    width: 370px;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.Box:hover .hover-box{
+    visibility: visible;
+    opacity: 0.91;
+}
+
+.hover-line1 {
+    width: 120px;
+    height: 1px;
+    background-color: gainsboro;
+    position: absolute;
+    top: 20px;
+    left: 125px;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.hover-line2 {
+    width: 120px;
+    height: 1px;
+    background-color: gainsboro;
+    position: absolute;
+    bottom: 20px;
+    left: 125px;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.hover-text {
+    color: white;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 135px;
+    left: 80px;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.Box:hover .hover-line1 {
+    visibility: visible;
+    animation: line1-hover 400ms ease forwards;
+}
+
+.Box:hover .hover-line2 {
+    visibility: visible;
+    animation: line2-hover 400ms ease forwards;
+}
+
+.Box:hover .hover-text {
+    visibility: visible;
+}
+
+@keyframes line1-hover {
+    100% {
+        top: 80px;
+    }
+}
+
+@keyframes line2-hover {
+    100% {
+        bottom: 80px;
+    }
 }
 
 .load-btn {
@@ -281,6 +359,217 @@ header {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+}
+
+.mid2-container {
+    width: 80%;
+    height: 600px;
+    margin-top: 0px;
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mid3-container {
+    width: 80%;
+    height: 600px;
+    margin-top: 0px;
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Pricing {
+    width: 370px;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-color1 {
+    background: linear-gradient(180deg, rgba(250,188,5,1) 33%, rgba(250,188,5,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 92%);
+}
+.pricing-color2 {    
+    background: linear-gradient(180deg, rgba(99,132,255,1) 33%, rgba(99,132,255,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 92%);
+}
+.pricing-color3 {
+    background: linear-gradient(180deg, rgba(57,169,111,1) 33%, rgba(57,169,111,1) 33%, rgba(255,255,255,1) 33%, rgba(255,255,255,1) 92%);
+}
+
+.Cercle-Design1 {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    right: 200px;
+}
+
+.Cercle-Design2 {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    right: -25px;
+}
+
+.mid3-head {
+    padding-top: 50px;
+    color: white;
+    font-family: Montserrat;
+}
+
+.price-circle {
+    width: 140px;
+    height: 140px;
+    margin-top: 40px;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid #bab8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.circle-hover1:hover {
+    background-color: rgba(250,188,5,1);
+    color: white;
+    transition: 200ms;
+}
+
+.circle-hover2:hover {
+    background-color: rgba(99,132,255,1);
+    color: white;
+    transition: 200ms;
+}
+
+.circle-hover3:hover {
+    background-color: rgba(57,169,111,1);
+    color: white;
+    transition: 200ms;
+}
+
+.price-circle p {
+    font-size: 20px;
+}
+
+.benefit-list {
+    padding-top: 50px;
+    z-index: 3;
+}
+
+.benefit-list li{
+    list-style-type: square;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.signup-btn1 {
+    padding: 10px 40px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border: 1px solid rgba(250,188,5,1);
+}
+
+.signup-btn1:hover {
+    background-color: rgba(250,188,5,1);
+    color: white;
+    transition: 200ms;
+}
+
+.signup-btn2 {
+    padding: 10px 40px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border: 1px solid rgba(99,132,255,1);
+}
+
+.signup-btn2:hover {
+    background-color: rgba(99,132,255,1);
+    color: white;
+    transition: 200ms;
+}
+
+.signup-btn3 {
+    padding: 10px 40px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    border: 1px solid rgba(57,169,111,1);
+}
+
+.signup-btn3:hover {
+    background-color: rgba(57,169,111,1);
+    color: white;
+    transition: 200ms;
+}
+
+.mid4-container {
+    width: 80%;
+    height: 600px;
+    margin-top: 0px;
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Team-Box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Team-Box:hover {
+    box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.2);
+    transition: 200ms;
+}
+
+.team-text {
+    color: black;
+    padding-top: 50px;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Team-Box:hover .team-text {
+    color: rgba(99,132,255,1);
+    transition: 350ms;
+}
+
+.team-text1 {
+    color: black;
+    padding-top: 20px;
+    font-weight: 300;
+    font-family: Montserrat;
 }
 
 #myBtn:hover {
